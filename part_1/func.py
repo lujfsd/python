@@ -54,4 +54,3 @@ if is_leapyear(year) == True:
 else:
     print "This is not leap year"
 
-
