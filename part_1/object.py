@@ -29,3 +29,18 @@ wang.show()
 
 lu.len()
 wang.len()
+
+#下面这个类实现了减法 操作符的重载
+#len(n) 返回list n所包含的元素总数
+#pop() 去除对象中的最后一个元素，并将该元素返回
+#remove(n) 去除对象中第一个值为n的元素
+class superList(list):
+    def __sub__(self,b):
+        a = self[:]
+        b = b[:]
+        while len(b) > 0:
+            element_b = b.pop()
+            if element_b in a:
+                a.remove(element_b)
+        return a
+print superList([1,2,3,3]) - superList([3,4]) 
