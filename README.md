@@ -9,3 +9,5 @@ part_1/
 		#序列的使用
 	--control.oy
 		#控制语句的练习if,for,while
+	--func.py
+		#函数的使用练习，闰年判断函数
